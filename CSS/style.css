@@ -1,15 +1,22 @@
 :root {
   font-family: cursive;
+  scroll-behavior: smooth;
 }
 /* Header section start */
 header {
   z-index: 2;
-  margin-left: 5%;
-  width: 90%;
+  display: flex;
+  flex-direction: row;
+  margin-left: 2%;
+  margin-top: 1%;
+  width: 94%;
+  height: 5dvh;
   position: fixed;
   /* overflow: hidden; */
-  background: transparent;
+  background: #241401;
   padding: 20px 10px;
+  border-radius: 10px;
+  justify-content: space-between;
 }
 
 header a {
@@ -17,7 +24,6 @@ header a {
   color: rgb(255, 255, 255);
   text-align: center;
   padding: 12px;
-  margin-top: 20px;
   text-decoration: none;
   font-size: 17px;
   font-weight: 100;
@@ -64,6 +70,7 @@ header .header-right a:hover {
   color: white;
   margin-right: 5%;
   margin-left: 5%;
+  justify-content: space-between;
 }
 .body .section1 .left {
   margin-top: 15%;
@@ -120,9 +127,10 @@ header .header-right a:hover {
   transform: scale(1.1);
 }
 .body .section1 .right img {
-  margin-top: 9%;
+  padding-left: 10%;
+  margin-top: 15%;
   transition: 0.3s ease-in-out;
-  width: 40%;
+  width: 30%;
   height: auto;
   transform: rotateZ(10deg);
 }
@@ -132,3 +140,57 @@ header .header-right a:hover {
 }
 
 /* Section1 End */
+
+/* card section start */
+.services {
+  background-color: #6F4E37;
+  padding: 10px;
+  height: 100dvh;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  justify-content: space-around;
+}
+
+.card {
+  background-color: #3f250e;
+  color: #D4A373;
+  box-shadow: 10px 10px 10px black;
+  text-align: center;
+  border: white 1px solid;
+  border-radius: 7px;
+  width: 25%;
+  height: 70%;
+  margin-top: 20dvh;
+  font-size: larger;
+  transition: 0.5s;
+}
+
+.card:hover {
+  transform: scale(1.02);
+}
+
+.card img {
+  width: 80%;
+}
+
+.card a {
+  display: inline-block;
+  border: whitesmoke 2px solid;
+  border-radius: 10px;
+  color: #FAF3E0;
+  background-color: #6c4e31;
+  padding: 10px;
+  text-decoration: none;
+  font-size: larger;
+  font-family: fantasy;
+  font-weight: 500;
+  transition: 0.3s;
+}
+
+.card a:hover {
+  background-color: #D4A373;
+  color: black;
+  transform: scale(1.05);
+}
+/* card section end */
