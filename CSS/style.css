@@ -142,9 +142,9 @@ header .header-right a:hover {
 
 /* Section1 End */
 
-/* card section start */
+/* card section(Section 2) start */
 .services {
-  background-color: #6F4E37;
+  background-color: #6f4e37;
   padding: 10px;
   height: 100dvh;
   display: flex;
@@ -155,7 +155,7 @@ header .header-right a:hover {
 
 .card {
   background-color: #3f250e;
-  color: #D4A373;
+  color: #d4a373;
   box-shadow: 10px 10px 10px black;
   text-align: center;
   border: white 1px solid;
@@ -179,7 +179,7 @@ header .header-right a:hover {
   display: inline-block;
   border: whitesmoke 2px solid;
   border-radius: 10px;
-  color: #FAF3E0;
+  color: #faf3e0;
   background-color: #6c4e31;
   padding: 10px;
   text-decoration: none;
@@ -190,8 +190,46 @@ header .header-right a:hover {
 }
 
 .card a:hover {
-  background-color: #D4A373;
+  background-color: #d4a373;
   color: black;
   transform: scale(1.05);
 }
-/* card section end */
+/* card section (Section 2) end */
+
+/* About section (Section 3) Start */
+.about {
+  height: 100dvh;
+  background-color: #241401;
+}
+.about .left {
+  padding-top: 150px;
+  width: 30%;
+  float: left;
+}
+.about .left img {
+  padding-left: 5%;
+  margin: auto;
+  border-radius: 7px;
+  height: 75dvh;
+}
+
+.about .right {
+  margin-right: 3%;
+  width: 67%;
+  padding-top: 190px;
+  font-size: larger;
+  float: right;
+  color: white;
+}
+
+.about .right h1 {
+  font-weight: 900;
+  text-align: left;
+  text-transform: capitalize;
+}
+
+/* About section (Section 3) End */
+
+/* Contact section (Section 4) Start */
+
+/* Contact section (Section 4) End */
