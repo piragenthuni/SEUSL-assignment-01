@@ -3,114 +3,167 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Services | Seusl-Coffee</title>
+    <title>Contact Us - Seusl Coffee</title>
     <style>
+        /* Global Styling */
         body {
-            font-family: Arial, sans-serif;
+            margin: 0;
+            font-family: 'Arial', sans-serif;
+            background-color: #f3efea;
+            color: #4a3f35;
+        }
+
+        h1, h2, p {
             margin: 0;
             padding: 0;
-            background-color: #f8f3eb;
-            color: #4b3832;
         }
-        header {
-            background-color: #6a4f4b;
-            color: #fff;
-            padding: 20px;
-            text-align: center;
-        }
-        h1 {
-            margin: 0;
-        }
+
         .container {
             max-width: 1200px;
-            margin: 20px auto;
+            margin: 0 auto;
             padding: 20px;
-            background: #fff;
-            border-radius: 8px;
-            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
         }
-        section {
+
+        /* Header Section */
+        header {
+            background-color: #4a3f35;
+            color: #f3efea;
+            text-align: center;
+            padding: 20px 0;
+        }
+
+        header h1 {
+            font-size: 2.5rem;
+            font-weight: 700;
+            letter-spacing: 1px;
+        }
+
+        /* Contact Form Section */
+        .contact-section {
+            margin: 50px auto;
+            background-color: #ffffff;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        .contact-info {
+            flex: 1 1 40%;
+            background-color: #4a3f35;
+            color: #f3efea;
+            padding: 40px;
+        }
+
+        .contact-info h2 {
+            font-size: 2rem;
             margin-bottom: 20px;
         }
-        h2 {
-            color: #6a4f4b;
-            border-bottom: 2px solid #e8d5c4;
-            padding-bottom: 5px;
-            margin-bottom: 10px;
+
+        .contact-info p {
+            line-height: 1.8;
+            margin-bottom: 20px;
         }
-        ul {
-            list-style-type: square;
-            padding-left: 20px;
+
+        .contact-info .social-links a {
+            text-decoration: none;
+            color: #f3efea;
+            margin-right: 15px;
+            font-size: 1.5rem;
         }
+
+        .contact-form {
+            flex: 1 1 60%;
+            padding: 40px;
+        }
+
+        .contact-form h2 {
+            font-size: 2rem;
+            margin-bottom: 20px;
+        }
+
+        .contact-form form {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .contact-form input,
+        .contact-form textarea {
+            margin-bottom: 20px;
+            padding: 15px;
+            font-size: 1rem;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        .contact-form textarea {
+            resize: none;
+            height: 150px;
+        }
+
+        .contact-form button {
+            padding: 15px;
+            font-size: 1rem;
+            color: #ffffff;
+            background-color: #4a3f35;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        .contact-form button:hover {
+            background-color: #6a5b4f;
+        }
+
+        /* Footer Section */
         footer {
             text-align: center;
-            padding: 10px 0;
-            background-color: #6a4f4b;
-            color: #fff;
-            margin-top: 20px;
-        }
-        a {
-            color: #4b3832;
-            text-decoration: none;
-            font-weight: bold;
-        }
-        a:hover {
-            color: #6a4f4b;
+            margin-top: 40px;
+            padding: 10px;
+            background-color: #4a3f35;
+            color: #f3efea;
         }
     </style>
 </head>
 <body>
+    <!-- Header -->
     <header>
-        <h1>Welcome to Seusl-Coffee</h1>
-        <p>Your favorite coffee. Your way.</p>
+        <h1>Contact Seusl Coffee</h1>
     </header>
-    <div class="container">
-        <section>
-            <h2>Specialty Coffee & Beverages</h2>
-            <p>Enjoy a wide selection of high-quality drinks crafted with care:</p>
-            <ul>
-                <li>Espresso-based drinks (Cappuccinos, Lattes, etc.)</li>
-                <li>Pour-over and French press coffee</li>
-                <li>Cold brews and iced coffee</li>
-                <li>Seasonal and signature drinks</li>
-                <li>Non-coffee options (Teas, Hot Chocolate, Refreshers)</li>
-            </ul>
-        </section>
-        <section>
-            <h2>Freshly Baked Goods</h2>
-            <p>Pair your coffee with delicious baked treats:</p>
-            <ul>
-                <li>Croissants, muffins, and scones</li>
-                <li>Cookies and brownies</li>
-                <li>Savory snacks (Sandwiches, Wraps)</li>
-                <li>Vegan and gluten-free options</li>
-            </ul>
-        </section>
-        <section>
-            <h2>Coffee Beans for Home Brewing</h2>
-            <p>Take the Seusl-Coffee experience home with our selection of fresh coffee beans. Let us help you find the perfect roast for your taste!</p>
-        </section>
-        <section>
-            <h2>Workspace Amenities</h2>
-            <p>Relax or work in our cozy space, complete with:</p>
-            <ul>
-                <li>Free Wi-Fi</li>
-                <li>Comfortable seating</li>
-                <li>Power outlets for your devices</li>
-            </ul>
-        </section>
-        <section>
-            <h2>Catering Services</h2>
-            <p>Bring Seusl-Coffee to your events with our catering options:</p>
-            <ul>
-                <li>Bulk coffee and beverage orders</li>
-                <li>Assorted pastry and snack trays</li>
-                <li>Custom setups for meetings and events</li>
-            </ul>
-        </section>
-    </div>
+
+    <!-- Contact Section -->
+    <section class="contact-section container">
+        <!-- Contact Information -->
+        <div class="contact-info">
+            <h2>Get in Touch</h2>
+            <p><strong>Address:</strong> 123 Coffee Street, Seusl City</p>
+            <p><strong>Phone:</strong> +94 123 456 789</p>
+            <p><strong>Email:</strong> support@seuslcoffee.com</p>
+            <div class="social-links">
+                <a href="#" title="Facebook">Facebook</a>
+                <a href="#" title="Instagram">Instagram</a>
+                <a href="#" title="Twitter">Twitter</a>
+            </div>
+        </div>
+
+        <!-- Contact Form -->
+        <div class="contact-form">
+            <h2>Send Us a Message</h2>
+            <form action="#" method="POST">
+                <input type="text" name="name" placeholder="Your Name" required>
+                <input type="email" name="email" placeholder="Your Email" required>
+                <input type="text" name="subject" placeholder="Subject" required>
+                <textarea name="message" placeholder="Your Message" required></textarea>
+                <button type="submit">Send Message</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
     <footer>
-        <p>&copy; 2024 Seusl-Coffee | <a href="#">Contact Us</a></p>
+        <p>&copy; 2024 Seusl Coffee. All rights reserved.</p>
     </footer>
 </body>
 </html>
